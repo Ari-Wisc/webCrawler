@@ -35,9 +35,11 @@ func main() {
 
     cfg.wg.Add(1)
     go cfg.crawlPage(rawBaseURL)
+	printReport(cfg.pages, rawBaseURL)
     cfg.wg.Wait()
 
-    for normalizedURL, count := range cfg.pages {
-        fmt.Printf("%d - %s\n", count, normalizedURL)
-    }
+    // for normalizedURL, count := range cfg.pages {
+    //     fmt.Printf("%d - %s\n", count, normalizedURL)
+    // }
+	
 }
