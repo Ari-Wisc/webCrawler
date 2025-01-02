@@ -1,3 +1,5 @@
-module github.com/Ari-Wisc/webCrawler
+module github.com/bootdotdev/go-api-gate/courses/projects/crawler
 
-go 1.23.4
+go 1.23.0
+
+require golang.org/x/net v0.24.0
